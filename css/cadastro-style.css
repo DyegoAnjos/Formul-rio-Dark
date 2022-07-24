@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+        font-weight: 300;   
+    color: white;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #220C10;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    height: 650px;
+    width: 900px;
+    background-color: #AB1536;
+    box-shadow: 0px 0px 50px #EE4266, inset 0px 0px 50px #EE4266;
+    border: solid 4px #EE4266;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+.lado1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lado2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    height: 250px;
+    border-bottom: solid 3px white;
+}
+
+.titulo{
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type= text], input[type= password], input[type= email],input[type= number],input[type= tel], select{
+    background-color: #220C10;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.botao{
+    height: 50px;
+    width: 200px;
+    background-color: #EE4266;
+    border: solid 2px #EE4266;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #EE4266, inset 0px 0px 10px #EE4266;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.botao:hover{
+    background-color: #AB1536;
+    color: #EE4266;
+    text-shadow: 0px 0px 2px #EE4266;
+}
+
+.link{
+    color: #EE4266;
+    transition: 200ms;
+}
+
+.link:hover{
+    color: #220C10;
+}
+
+@keyframes fade {
+    from {    
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {         
+        opacity: 1;
+        transform: scale(1);
+    }
+}

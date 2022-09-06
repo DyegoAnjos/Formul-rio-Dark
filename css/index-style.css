@@ -10,10 +10,17 @@
     color: white;
 }
 
+:root{
+    --rosa: #EE4266;
+    --rosaEscuro: #AB1536;
+    --preto: #220C10;
+    font-size: 20px;
+}
+
 body{
     width: 100vw;
     height: 100vh;
-    background-color: #220C10;
+    background-color:var(--preto);
 
 
     display: flex;
@@ -23,18 +30,20 @@ body{
 }
 
 form{
-    height: 800px;
-    width: 800px;
-    background-color: #AB1536;
-    box-shadow: 0px 0px 50px #EE4266, inset 0px 0px 50px #EE4266;
-    border: solid 4px #EE4266;
+    height: 700px;
+    width: 700px;
+    background-color: var(--rosaEscuro);
+    box-shadow: 0px 0px 50px var(--rosa), inset 0px 0px 50px var(--rosa);
+    border: solid 4px var(--rosa);
     border-radius: 20px;
+    margin: 0 auto;
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+
     animation-name: fade;
     animation-duration: 5s;
 }
@@ -46,56 +55,67 @@ form{
 }
 
 .logo{
-    height: 250px;
+    width: 40%;
     border-bottom: solid 3px white;
 }
 
 .titulo{
-    font-size: 50px;
+    font-size: 2.5rem;
     font-family: 'Nunito', sans-serif;
         font-weight: 700;
 }
 
 .campos{
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
+label{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 input[type= text], input[type= password]{
-    background-color: #220C10;
-    height: 50px;
-    width: 300px;
+    height: 60px;
+    width: 50%;
+    background-color: var(--preto);
     border-radius: 10px;
     padding: 10px;
 }
 
 .botao{
-    height: 50px;
-    width: 200px;
-    background-color: #EE4266;
-    border: solid 2px #EE4266;
+    width: 30%;
+    padding: 5px;
+    background-color: var(--rosa);
+    border: solid 2px var(--rosa);
     border-radius: 20px;
-    box-shadow: 0px 0px 10px #EE4266, inset 0px 0px 10px #EE4266;
-    font-size: 20px;
+    box-shadow: 0px 0px 10px var(--rosa), inset 0px 0px 10px var(--rosa);
+    font-size: 1rem;
     cursor: pointer;
     transition: 200ms;
 }
 
 .botao:hover{
-    background-color: #AB1536;
-    color: #EE4266;
-    text-shadow: 0px 0px 2px #EE4266;
+    background-color: var(rosaEscuro);
+    color: var(--rosa);
+    text-shadow: 0px 0px 2px var(--rosa);
 }
 
 .link{
-    color: #EE4266;
+    color: var(--rosa);
     transition: 200ms;
 }
 
 .link:hover{
-    color: #220C10;
+    color: var(--preto);
 }
 
 @keyframes fade {
@@ -111,52 +131,29 @@ input[type= text], input[type= password]{
 
 @media (max-width: 800px){
     main{
-        height: 100%;
         width: 100%;
-    }
-
-    form{
         height: 100%;
-        width: 100%;
-        border-radius: 0;
-        justify-content: center;
-        gap: 50px;
-        align-items: center;
-    }
-
-    .campos{
-        width: 700px;
-        height: auto;
     }
 
     input[type= text], input[type= password]{
-        min-width: 500px;
-        min-height: 100px;
-        border-radius: 30px;
-    }
-
-    input::placeholder{
-        font-size: 25px;
-    }
-
-    .botao{
-        width: 420px;
-        height: 127px;
-        font-size: 40px;
-        border-radius: 50px;
-    }
-
-    .texto{
-        font-size: 30px;
-    }
-
-    .logo{
         height: auto;
-        width: 400px;
+    }
+
+    form{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
     }
 }
 
-@media (max-width:700px){
+@media (max-width: 430px){
+    .texto{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
+/*@media (max-width:700px){
 
     form{
         padding: 40px;

@@ -6,7 +6,10 @@ const senha = document.getElementById('senha')
 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
-    validarinputs()
+    
+    if(validarinputs()===true){
+        form.classList.add("formEsconder")
+    }
 })
 
 function validarinputs() {
@@ -31,6 +34,7 @@ function validarinputs() {
 
     else{
         setarSucessoPara(senha)
+        return true;
     }
 }
 

@@ -53,6 +53,11 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    animation-name: respiro;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite
 }
 
 .logo{
@@ -167,6 +172,40 @@ label.erro small{
         opacity: 1;
         transform: scale(1);
     }
+}
+
+.formEsconder{
+    animation-name: enviar;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes respiro{
+    0%{
+        transform: scale(100%);
+    }
+
+    50%{
+        transform: scale(95%);
+    }
+
+    100%{
+        transform: scale(100%);
+    }
+}
+
+@keyframes enviar{
+    from{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to{
+        opacity: 0;
+        transform: scale(0.1);
+    }
+
 }
 
 @media (max-width: 800px){

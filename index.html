@@ -2,39 +2,45 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index-style.css">
     <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
-    <title>Login</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <title>Formilário</title>
 </head>
 <body>
     <main>
-        <form method="post" action="#" id="form">
-            <div class="principal">
-                <img class="logo" src="imgs/logo.png" alt="logo">
-                <h1 class="titulo">Login</h1>
+        <div id="ErrorBox">
+            <p>Ops! Usuário ou senha incorretos</p>
+        </div>
+        <form method="post" action="#" id="Form">
+            <div id="FormHeader">
+                <img src="imgs/logo.png" alt="Logo">
             </div>
-            <div class="campos">
-                <label for="nome-usuario" class="formControl">
-                    <input type="text" id="nome" name="usuário" placeholder="Nome de usuário">
-                    <i class="fa-solid fa-circle-exclamation"></i>
-                    <i class="fa-solid fa-circle-check"></i>
-                    <small>Erro</small>
+            <div id="FormBody">
+                <label for="EmailLogin">
+                    <p class="InputText">Email</p>
+                    <input type="email" name="Email" id="EmailInput" class="Input">
                 </label>
-                <label for="senha" class="formControl">
-                    <input type="password" id="senha" name="senha" placeholder="Sua senha">
-                    <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
-                    <i class="fa-solid fa-circle-check"></i>
-                    <small>Erro</small>
+                <label for="PasswordInput">
+                    <p class="InputText">Senha</p>
+                    <input type="password" name="Password" id="PasswordInput" class="Input">
+                    <i class="fa-solid fa-eye" id="VisivelButton"></i>
+                    <i class="fa-solid fa-eye-slash" id="InvisivelButton"></i>
                 </label>
-                <button class="botao" type="submit">Logar</button>
-                <p class="texto">Não tem uma conta? <a class="link" href="html/cadastro.html" target="_parent">Cadastre-se</a></p>
+            </div>
+            <div id="FormFooter">
+                <button type="submit">Login</button>
             </div>
         </form>
-    
+        <div id="SingUpBox">
+            <p>Não tem uma conta? <a href="">Crie Agora</a>.</p>
+        </div>
     </main>
+    <footer>
+        <h1>Espero que tenham gostado</h1>
+        <a href="https://github.com/DyegoAnjos/Formulario-Dark" id="Github"><i class="fa-brands fa-github"></i></a>
+        <a href="https://dyegoanjos.github.io/Portfolio/" id="Portifolio"><img src="imgs/LogoPortifolio.svg" alt="Logo Responsivo"></a>
+    </footer>
     <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>

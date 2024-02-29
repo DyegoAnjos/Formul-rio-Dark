@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+        font-weight: 300; 
+
+        color: var(--Letter);
+
+}
+
+:root{
+    --Backgrond: #2B303A ;
+    --Letter: #F9F9F9;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--Backgrond);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#Form{
+    min-width: 282px;
+    width: 80%;
+    max-width: 860px;
+    height: 100%;
+    border:  var(--Letter) solid 1px;
+    border-radius: 1rem;
+
+    display: grid;
+    grid-template-areas: "FormHeader"
+    "FormBody"
+    "FormFooter";
+}
+
+#FormHeader{
+    grid-area: FormHeader;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#FormHeader img{
+    min-width: 140px;
+    max-width: 500px;
+    width: 50%;
+    
+}
+
+#FormBody{
+    grid-area: FormBody;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;    
+}
+
+label{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+
+.Input{
+    height: 2rem;
+    
+    background-color: var(--Backgrond);
+    border: var(--Letter) solid 1px;
+    border-radius: .3rem;
+    padding: 1rem;
+}
+
+label i{
+    position: absolute;
+    bottom: 8px;
+    right: -29px;
+}
+
+#InvisivelButton{
+    display: none;
+}
+
+#FormFooter{
+    grid-area: FormFooter;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 1rem;
+}
+
+#FormFooter button{
+    width: 50%;
+    font-size: 1.5rem;
+    background-color: #2ea043;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 50px 3px #2ea043;
+
+    transition: .5s;
+}
+
+#FormFooter button:hover{    
+    background-color: var(--Letter);
+    color: #2ea043;
+
+    box-shadow: 0px 0px 50px 3px var(--Letter);
+    
+    transition: .5s;
+}
+
+#SingUpBox{
+    min-width: 282px;
+    width: 80%;
+    max-width: 860px;
+    height: 50px;
+    border:  var(--Letter) solid 1px;
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#SingUpBox a{
+    color: #2ea043;
+}
+
+#ErrorBox{
+    min-width: 282px;
+    width: 80%;
+    max-width: 860px;
+    height: 50px;
+    border:  var(--Letter) solid 1px;
+    border-radius: 0.5rem;
+    background-color: #ff020249;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    width: 50%;
+
+    display: grid;
+    grid-template-areas: "Titulo Titulo"
+    "Github Portifolio";
+    align-items: center;
+    justify-content: center;
+    border-top: var(--Letter) solid 1px;
+    margin-top: 2rem;
+}
+
+h1{
+    grid-area: Titulo;
+    text-align: center;
+}
+
+#Github{
+    grid-area: Github;
+    font-size: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#Portifolio{
+    grid-area: Portifolio;
+    width: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Portifolio img{
+    filter: contrast(var(--Letter));
+}

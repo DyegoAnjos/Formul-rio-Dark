@@ -9,7 +9,7 @@
 > Um simples formulário dark que não possui Back-End
 
 
-## 💻 Tecnlogias e Habilidades Usadas no Projeto
+## 💻 Tecnologias e Habilidades Usadas no Projeto
 
 <img src="imgs/readme/html.svg" alt="HTML" style="width: 57px; margin:10px;">
 <img src="imgs/readme/css.png" alt="CSS" style="width: 50px; margin:10px;">

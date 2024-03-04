@@ -3,11 +3,49 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
-        <link rel="stylesheet" href="css/Style.css">
+        <link rel="shortcut icon" href="../imgs/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/Style.css">
         <title>Formilário</title>
     </head>
 <body>
-    
+    <main>
+        <div id="ErrorBox">
+            <p>Ops! Email ou senha incorretos</p>
+        </div>
+        <form method="get" action="../index.html" id="Form">
+            <div id="FormHeader">
+                <img src="../imgs/logo.png" alt="Logo">
+            </div>
+            <div id="FormBody">
+                <label for="NameInput">
+                    <p class="InputText">Nome Completo (Opicional)</p>
+                    <input type="text" name="Name" id="NameInput" class="Input">
+                </label>
+                <label for="EmailLogin">
+                    <p class="InputText">Email</p>
+                    <input type="email" name="Email" id="EmailInput" class="Input">
+                </label>
+                <label for="PasswordInput">
+                    <p class="InputText">Senha</p>
+                    <input type="password" name="Password" id="PasswordInput" class="Input">
+                    <i class="fa-solid fa-eye" id="VisivelButton"></i>
+                    <i class="fa-solid fa-eye-slash" id="InvisivelButton"></i>
+                </label>
+            </div>
+            <div id="FormFooter">
+                <button type="submit" >Login</button>
+            </div>
+        </form>
+        <div id="SingUpBox">
+            <p>Já tem uma conta? <a href="../index.html">Entre aqui</a>.</p>
+        </div>
+    </main>
+    <footer>
+        <h1>Espero que tenham gostado</h1>
+        <a href="https://github.com/DyegoAnjos/Formulario-Dark" id="Github"><i class="fa-brands fa-github"></i></a>
+        <a href="https://dyegoanjos.github.io/Portfolio/" id="Portifolio"><img src="../imgs/LogoPortifolio.svg" alt="Logo Responsivo"></a>
+    </footer>
+    <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
+    <script src="../js/Script.js"></script>
 </body>
 </html>

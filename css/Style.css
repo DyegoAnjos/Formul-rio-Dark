@@ -20,9 +20,10 @@
 
 body{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 
     background-color: var(--Backgrond);
+    margin-top: 5%;
 
     display: flex;
     flex-direction: column;
@@ -165,11 +166,13 @@ label i{
     border-radius: 0.5rem;
     background-color: #ff020249;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+
 
 footer{
     width: 50%;
@@ -180,7 +183,7 @@ footer{
     align-items: center;
     justify-content: center;
     border-top: var(--Letter) solid 1px;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 h1{
@@ -198,6 +201,7 @@ h1{
 }
 
 #Portifolio{
+    
     grid-area: Portifolio;
     width: 50px;
 

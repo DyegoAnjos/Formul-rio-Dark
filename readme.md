@@ -3,24 +3,19 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/DyegoAnjos/Formulario-Dark?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/DyegoAnjos/Formulario-Dark?style=for-the-badge)
 
-<img src="/imgs/readme/Capa.png" alt="exemplo imagem">
+![Capa](imgs/readme/Capa.png)
 
-> Um simples formulário neon (não possui backend). 
 
-### Ajustes e melhorias
+> Um simples formulário dark que não possui Back-End
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [x] Pagina Home
-- [X] Cadastro: Nome, Notas e turma.
-- [X] Retorno média.
-- [X] Responsivo.
+## 💻 Tecnlogias e Habilidades Usadas no Projeto
 
-## 💻 Habilidades no Projeto
-
-<img src="/imgs/readme/html.svg" alt="Habilidade Imagem" style="width: 50px; margin:10px;">
-<img src="/imgs/readme/css.png" alt="Habilidade Imagem" style="width: 50px; margin:10px;">
-<img src="/imgs/readme/js.png" alt="Habilidade Imagem" style="width: 60px; margin:10px;">
+<img src="imgs/readme/html.svg" alt="HTML" style="width: 57px; margin:10px;">
+<img src="imgs/readme/css.png" alt="CSS" style="width: 50px; margin:10px;">
+<img src="imgs/readme/js.png" alt="Habilidade Imagem" style="width: 60px; 
+margin:10px;">
+<img src="imgs/readme/Responsivo.svg" alt="Habilidade Imagem" style="width: 60px; margin:10px;">
 
 ## 🚀 Link para o Site
 
@@ -30,7 +25,7 @@ O projeto está hospedado com o hospedagem gratuita do github
 
 ## 😄 Confira esses e outros projetos no meu portfólio
 <a href="https://dyegoanjos.github.io/Portfolio/" target="_blank">
-    <img src="/imgs/readme/portfolioImg.png" alt="Habilidade Imagem" style="width: 400px; margin: 0px 50px;">
+    <img src="imgs/readme/portfolioImg.png" alt="Habilidade Imagem" style="width: 400px; margin: 0px 50px;">
 </a>
 
 ## 📫 Redes sociais

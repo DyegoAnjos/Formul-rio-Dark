@@ -1,54 +1,66 @@
-const form = document.getElementById('form')
-const nome = document.getElementById('nome')
-const senha = document.getElementById('senha')
+const FormElemetn = document.querySelector("#Form")
+const EmailInput = document.querySelector("#EmailInput")
+const PasswordInput = document.querySelector("#PasswordInput")
+const ShowPasswordButtn = document.querySelector("#VisivelButton")
+const HidePasswordButtn = document.querySelector("#InvisivelButton")
+const ErroBox = document.querySelector("#ErrorBox")
 
-
-
-form.addEventListener("submit", (e) => {
+FormElemetn.addEventListener("submit", (e) =>{
     e.preventDefault()
-    
-    if(validarinputs()===true){
-        form.classList.add("formEsconder")
+
+    if(validarInputs()===true){
+        ErroBox.style.display = "none"
     }
 })
 
-function validarinputs() {
-    const nomeValor = nome.value
-    const senhaValor = senha.value
+ShowPasswordButtn.addEventListener("click", (e) =>{
+    PasswordInput.type = "text"
 
-    if (nomeValor === ''){
-        setarErroPara (nome,"O nome é obrigatório.")
+    HidePasswordButtn.style.display = "block"
+    ShowPasswordButtn.style.display = "none"
+})
+
+HidePasswordButtn.addEventListener("click", (e) =>{
+    PasswordInput.type = "password"
+
+    HidePasswordButtn.style.display = "none"
+    ShowPasswordButtn.style.display = "block"
+})
+
+function validarInputs(){
+    const EmailValue = EmailInput.value 
+    const PasswordValue = PasswordInput.value
+
+    if (EmailValue === ''){
+        ShowErroBox();
+        
+        EmailInput.style.borderColor = "#ff020249"
     }
 
     else{
-        setarSucessoPara(nome)
+        EmailInput.style.borderColor = "#2ea043"
     }
 
-    if (senhaValor === ''){
-        setarErroPara(senha, "A senha é obrigatório")
+    if (PasswordValue === " "){
+        ShowErroBox();
+
+        PasswordInput.style.borderColor = "#ff020249"
     }
 
-    else if (senhaValor.length < 6) {
-        setarErroPara(senha, "No mínimo 6 caracteres.")
+    else if (PasswordValue.length < 6){
+        ShowErroBox();
+
+        PasswordInput.style.borderColor = "#ff020249"
     }
 
     else{
-        setarSucessoPara(senha)
+        PasswordInput.style.borderColor = "#2ea043"
+
         return true;
     }
+
 }
 
-function setarErroPara (input, message){
-    const formControl = input.parentElement
-    const small = formControl.querySelector("small")
-
-    small.innerText = message
-    formControl.className = 'erro'
-}
-
-function setarSucessoPara(input){
-    const formControl = input.parentElement
-
-    formControl.className = 'fomrContrls sucesso'
-    
+function ShowErroBox(){
+    ErroBox.style.display = "flex"
 }
